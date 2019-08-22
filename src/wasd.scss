@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i');
+
+$family-sans-serif: 'Montserrat', Arial, sans-serif;
+
+$wasd-background: #FAFAFA;
+$wasd-blue: #3C99FF;
+$wasd-teal: #83FFCE;
+$wasd-light-blue: #57EDFF;
+
+$wasd-grad-1: #72DEFF;
+$wasd-grad-2: #72C7FF;
+$wasd-grad-3: #6DE3FF;
+$wasd-grad-4: #A3F2FF;
+$wasd-grad-5: #5DAAFF;
+$wasd-grad-6: #6DBFFF;
+$wasd-grad-7: #71DEFF;
+$wasd-grad-8: #72E5FF;
+$wasd-grad-9: #72D9FF;
+$wasd-grad-10: #72F6FF;
+
+$hero-text: #EEF6FF;
+$hero-divider: #ADDEFF;
+
+// Screen width overrides
+$mobile-width: 400px;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+$body-background-color: $wasd-background;
+
+$navbar-background-colour: transparent;
+$navbar-item-hover-background-color: transparent;
+
+$primary: $wasd-blue;
+
+@import "custom";
+
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/grid/columns.sass";
+// @import "../node_modules/bulma/sass/components/level.sass";
+// @import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/layout/hero.sass";
+@import "../node_modules/bulma/sass/layout/section.sass";
