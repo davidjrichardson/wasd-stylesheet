@@ -7,6 +7,8 @@ $family-sans-serif: 'Montserrat', Arial, sans-serif;
 $wasd-background: #FAFAFA;
 $wasd-blue: #3C99FF;
 $wasd-teal: #83FFCE;
+$wasd-indigo: #8896ff;
+$wasd-purple: rgb(146, 116, 255);
 $wasd-light-blue: #57EDFF;
 
 $wasd-grad-1: #72DEFF;
@@ -35,13 +37,16 @@ $navbar-item-hover-background-color: transparent;
 
 $primary: $wasd-blue;
 
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+
 @import "custom";
 
-@import "../node_modules/bulma/sass/utilities/_all.sass";
+// @import "../node_modules/bulma/sass/utilities/_all.sass";
 @import "../node_modules/bulma/sass/base/_all.sass";
 @import "../node_modules/bulma/sass/elements/button.sass";
 @import "../node_modules/bulma/sass/elements/container.sass";
 @import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/elements/content.sass";
 @import "../node_modules/bulma/sass/form/_all.sass";
 @import "../node_modules/bulma/sass/grid/columns.sass";
 // @import "../node_modules/bulma/sass/components/level.sass";

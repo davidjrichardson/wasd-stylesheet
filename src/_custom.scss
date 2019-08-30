@@ -455,11 +455,80 @@ svg .background-fill {
 }
 
 .where-wrapper {
-    background-color: $wasd-grad-10;
+    background-image: linear-gradient(-5deg, $wasd-purple -20%, $wasd-grad-1 50%);
+
+    & svg:last-child {
+        margin-bottom: -7px;
+    }
+
+    & svg {
+        min-width: 1080px;
+    }
 
     & #where {
+        min-height: 500px;
+
         & hr.title-divider {
-            background-color: rgba(black, 0.25);
+            background-color: rgba(black, 0.35);
+
+            margin-bottom: 0;
+        }
+    }
+
+    & .content {
+        & p {
+            color: $grey-darker;
+        }
+
+        & a {
+            color: $grey-darker;
+            text-decoration: underline;
+    
+            &:hover,
+            &:focus {
+                color: $grey;
+            }
+        }
+
+        & h4:not(:first-child) {
+            margin-top: 1.2em;
+        }
+
+        & iframe {
+            margin-top: 1.2em;
+            border-radius: $radius;
+            width: 100%;
+            height: 400px;
+
+            box-shadow: 0 3px 6px rgba(darken($wasd-blue, 5%), 0.3);
         }
     }
 }
+
+#whats-on {
+    & hr.title-divider {
+        background-color: rgba($wasd-indigo, 0.8);
+    }
+}
+
+// footer.footer {
+//     background-color: $wasd-indigo;
+//     color: $grey-darker;
+
+//     & .socials {
+//         list-style: none;
+
+//         & li {
+//             display: inline-block;
+//         }
+
+//         & a {
+//             color: $grey-darker;
+    
+//             &:hover,
+//             &:focus {
+//                 color: $grey;
+//             }
+//         }
+//     }
+// }
