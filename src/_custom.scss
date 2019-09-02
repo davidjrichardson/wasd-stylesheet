@@ -435,8 +435,40 @@ svg .background-fill {
     }
 
     & a {
-        height: 60px;
-        line-height: 60px;
+        max-height: 60px;
+
+        &.pad-635 {
+            padding-left: 63.5px;
+            padding-right: 63.5px;
+        }
+        
+        &.mw-187 {
+            min-width: 187px;
+        }
+
+        & img {
+            max-height: inherit;
+
+            filter: opacity(75%);
+            transition: filter 0.2s ease-in-out;
+
+            &.we {
+                filter: opacity(60%);
+            }
+
+            &.uwcs {
+                filter: opacity(65%);
+            }
+        }
+
+        &.large {
+            max-height: 90px;
+        }
+
+        &:hover img,
+        &:focus img{
+            filter: opacity(100%);
+        }
     }
 
     & .logos {
@@ -509,26 +541,66 @@ svg .background-fill {
     & hr.title-divider {
         background-color: rgba($wasd-indigo, 0.8);
     }
+
+    & .whats-on-row {
+        margin-bottom: $block-spacing;
+    }
+
+    & figure img {
+        border-radius: $radius;
+
+        box-shadow: 0 2px 4px rgba(darken($wasd-blue, 50%), 0.3);
+    }
 }
 
-// footer.footer {
-//     background-color: $wasd-indigo;
-//     color: $grey-darker;
+footer.footer {
+    background-color: $wasd-indigo;
+    color: rgba(white, 0.95);
 
-//     & .socials {
-//         list-style: none;
+    & svg {
+        min-width: 1080px;
+    }
 
-//         & li {
-//             display: inline-block;
-//         }
+    & .columns {
+        align-items: flex-end;
+    }
 
-//         & a {
-//             color: $grey-darker;
-    
-//             &:hover,
-//             &:focus {
-//                 color: $grey;
-//             }
-//         }
-//     }
-// }
+    & .socials-title {
+        color: rgba(white, 0.9);
+
+        margin-bottom: 0.4em;
+    }
+
+    & .content {
+        & a {
+            text-decoration: underline;
+
+            color: rgba(white, 0.95);
+
+            &:hover,
+            &:focus {
+                color: white;
+            }
+        }
+    }
+
+    & .socials {
+        & li {
+            display: inline-block;
+
+            & a {
+                font-size: 36px;
+                color: rgba(white, 0.7);
+
+                margin-right: 1rem;
+
+                transition: color 0.1s ease-in-out;
+
+                &:hover,
+                &:focus {
+                    color: rgba(white, 0.9);
+                }
+            }
+        }
+    }
+}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>My custom Bulma website</title>
+    <title>Warwick's Awesome Speedruns and Demos 2020</title>
     <link rel="stylesheet" href="css/wasd.bundle.css">
     <script src="js/bundle.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -11,12 +11,10 @@
         <div class="container">
           <div class="navbar-menu">
               <div class="navbar-start">
-                <!-- <a class="navbar-item" href="#">Home</a> -->
-                <!-- <a class="navbar-item" href="#">News</a> -->
-                <a class="navbar-item" href="#">VODs</a>
+                <a class="navbar-item" href="https://wasd.warwick.gg/vods">VODs</a>
               </div>
               <div class="navbar-end">
-                  <a class="navbar-item" href="#"><i class="fab fa-discord"></i> Discord</a>
+                  <a class="navbar-item" href="https://wasd.warwick.gg/discord"><i class="fab fa-discord"></i> Discord</a>
               </div>
           </div>
         </div>
@@ -46,10 +44,10 @@
               </g>
             </svg>
             <hr class="hero-divider"/>
-            <p>A student-led speedrunning marathon in the UK for <a href="#">SpecialEffect</a>.</p>
-            <p><strong>WASD 2020</strong> starts in <strong>183 days</strong>, <strong>23 hours</strong> and <strong>43 minutes</strong></p>
-            <a href="#" class="button is-wasd">Sign up</a>
-            <p><small>Sign ups close 23:59 UTC on 1st January 1970</small></p>
+            <p>A student-led speedrunning marathon in the UK for <a href="https://specialeffect.org.uk">SpecialEffect</a>.</p>
+            <p id="countdown"><strong>WASD 2020</strong> starts in <strong id="days">133 days</strong>, <strong id="hours">7 hours</strong> and <strong id="mins">69 minutes</strong></p>
+            <a href="https://wasd.warwick.gg/signup" class="button is-wasd">Sign up</a>
+            <p><small>Sign ups close 23:59 UTC on 6th December 2019</small></p>
           </div>
         </div>
       </div>
@@ -67,8 +65,8 @@
             <div class="content">
               <h1 class="title is-size-2">Warwick's Awesome Speedruns and Demos</h1>
               <hr class="title-divider"/>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate diam tristique tincidunt pretium. Quisque eget nulla ac augue posuere vulputate et pulvinar ante. Sed sed molestie sapien. Quisque a ultricies nulla, non facilisis orci. Aenean ultrices nibh in accumsan laoreet.</p>
-              <p>Cras porta venenatis sollicitudin. Quisque ex sapien, vehicula non magna a, malesuada sagittis nibh. Class aptent taciti sociosqu ad litora torquent per conubia.</p>
+              <p>Warwick's Awesome Speedruns and Demos (WASD) is a 2-day speedrunning marathon run by students at the University of Warwick, UK. Now in its fifth year, it's the largest student-run speedrunning event in the UK. WASD 2020 will take place on the 1st and 2nd of February.</p>
+              <p>The event raises money for SpecialEffect, a charity which develops and provides assistive technology to help people with disabilities to play games.</p>
             </div>
           </div>
           <div id="stopwatch-column" class="column is-4 is-flex-tablet is-hidden-mobile">
@@ -101,15 +99,23 @@
         <div class="logo-level">
           <h4 class="title is-size-4">Partners</h4>
           <div class="logos">
-            <a href="#">UWCS</a>
-            <a href="#">Warwick Esports</a>
-            <a href="#">Warwick SU</a>
+            <a href="https://uwcs.co.uk">
+              <img class="uwcs" src="/dist/img/uwcs.png" alt="University of Warwick Computing Society"/>
+            </a>
+            <a href="https://warwicksu.com" class="pad-635">
+              <img src="/dist/img/su-logo.png" alt="Warwick SU"/>
+            </a>
+            <a href="https://warwickesports.com" class="mw-187">
+              <img class="we" src="/dist/img/warwick-esports.png" alt="Warwick Esports"/>
+            </a>
           </div>
         </div>
         <div class="logo-level">
           <h4 class="title is-size-4">Supporting</h4>
           <div class="logos">
-            <a href="#">SpecialEffect</a>
+              <a class="large" href="https://www.specialeffect.org.uk/">
+                <img src="/dist/img/specialeffect.png" alt="SpecialEffect"/>
+              </a>
           </div>
         </div>
       </div>
@@ -133,17 +139,18 @@
                   <h4>When</h4>
                   <p>WASD2020 begins at <strong>12PM UTC</strong> on <strong>1st February 2020</strong>.</p>
                   <h4>Where</h4>
-                  <p>WASD2020 will be hosted on the <strong>University of Warwick</strong> in <strong>Coventry, United Kingdom</strong>. The exact location is still to be determined.</p>
+                  <p>WASD2020 will be hosted at the <strong>University of Warwick</strong> in <strong>Coventry, United Kingdom</strong>. The exact location is still to be determined.<p>
+                  <p>WASD2020 will be <strong>streamed live on Twitch</strong> on the <a href="https://twitch.tv/warwickesports">Warwick Esports</a> twitch channel.</p>
               </div>
             </div>
             <div class="column is-6">
               <div class="content">
                 <h4>Who</h4>
-                <p>WASD is run a committee of students and alumni of the University of Warwick. You can get in contact with them by <a href="#">email</a> or on <a href="#">Discord</a>.</p>
+                <p>WASD is run a committee of students and alumni of the University of Warwick. You can get in contact with them by <a href="mailto:wasd@warwick.gg">email</a> or on <a href="https://wasd.warwick.gg/discord" target="_blank">Discord</a>.</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5182.932569470427!2d-1.5633123600885481!3d52.3804864266804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48774ac696d53ee5%3A0xaa928d75708b2b54!2sUniversity%20of%20Warwick!5e0!3m2!1sen!2suk!4v1567157959013!5m2!1sen!2suk" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                 <h4>How to get there</h4>
                 <p>The University of Warwick has fantastic connections with the city of Coventry, which is easily accessible by the national rail network. The campus is very close to and signposted on both the A45 and A46 roads. Coventry is also 20 minute train journey away from Birmingham International airport.</p>
-                <p>More information on how to get to WASD2020 will be available in our <a href="#">infopack</a>.</p>
+                <p>More information on how to get to WASD2020 will be available in our <a href="https://wasd.warwick.gg/infopack">infopack</a>.</p>
               </div>
             </div>
           </div>
@@ -155,10 +162,61 @@
     </div>
     <section id="whats-on" class="section">
       <div class="container">
-        <div class="columns">
+        <div class="columns is-multiline">
           <div class="column is-8">
-              <h1 class="title is-size-2">What's On</h1>
-              <hr class="title-divider"/>
+            <h1 class="title is-size-2">What's On</h1>
+            <hr class="title-divider"/>
+          </div>
+          <div class="column is-12 whats-on-row">
+            <div class="columns">
+              <div class="column">
+                <h4 class="title is-size-4 has-text-centered">Test Pug 1</h4>
+                <div class="content">
+                  <p>Nullam eu velit sed odio tempor euismod. Ut ultricies dui purus, et venenatis eros feugiat eu. Maecenas vel facilisis lectus. Nam ut volutpat eros. Nullam vulputate eget ligula et rutrum.</p>
+                  <figure class="image is-3by2">
+                    <img src="https://picsum.photos/id/1025/900/600">
+                  </figure>
+                  <p>Aliquam maximus nisl risus. Donec euismod, erat at faucibus fringilla, eros sapien posuere nisl, non vehicula felis felis quis enim. Aenean at mi lectus. In luctus, nisi eu posuere finibus, urna lorem malesuada ipsum, ac finibus enim tortor et mi. Fusce sit amet accumsan dui.</p>
+                </div>
+              </div>
+              <div class="column">
+                <h4 class="title is-size-4 has-text-centered">Test Pug 2</h4>
+                <div class="content">
+                  <p>Nullam eu velit sed odio tempor euismod. Ut ultricies dui purus, et venenatis eros feugiat eu. Maecenas vel facilisis lectus. Nam ut volutpat eros. Nullam vulputate eget ligula et rutrum.</p>
+                  <figure class="image is-3by2">
+                    <img src="https://picsum.photos/id/1025/900/600">
+                  </figure>
+                  <p>Aliquam maximus nisl risus. Donec euismod, erat at faucibus fringilla, eros sapien posuere nisl, non vehicula felis felis quis enim. Aenean at mi lectus. In luctus, nisi eu posuere finibus, urna lorem malesuada ipsum, ac finibus enim tortor et mi. Fusce sit amet accumsan dui.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-12 whats-on-row">
+            <div class="columns">
+              <div class="column">
+                <h4 class="title is-size-4 has-text-centered">Test Pug 3</h4>
+                <div class="content">
+                  <p>Nullam eu velit sed odio tempor euismod. Ut ultricies dui purus, et venenatis eros feugiat eu. Maecenas vel facilisis lectus. Nam ut volutpat eros. Nullam vulputate eget ligula et rutrum.</p>
+                  <figure class="image is-3by2">
+                    <img src="https://picsum.photos/id/1025/900/600">
+                  </figure>
+                  <p>Aliquam maximus nisl risus. Donec euismod, erat at faucibus fringilla, eros sapien posuere nisl, non vehicula felis felis quis enim. Aenean at mi lectus. In luctus, nisi eu posuere finibus, urna lorem malesuada ipsum, ac finibus enim tortor et mi. Fusce sit amet accumsan dui.</p>
+                </div>
+              </div>
+              <div class="column">
+                <h4 class="title is-size-4 has-text-centered">Test Pug 4</h4>
+                <div class="content">
+                  <p>Nullam eu velit sed odio tempor euismod. Ut ultricies dui purus, et venenatis eros feugiat eu. Maecenas vel facilisis lectus. Nam ut volutpat eros. Nullam vulputate eget ligula et rutrum.</p>
+                  <figure class="image is-3by2">
+                    <img src="https://picsum.photos/id/1025/900/600">
+                  </figure>
+                  <p>Aliquam maximus nisl risus. Donec euismod, erat at faucibus fringilla, eros sapien posuere nisl, non vehicula felis felis quis enim. Aenean at mi lectus. In luctus, nisi eu posuere finibus, urna lorem malesuada ipsum, ac finibus enim tortor et mi. Fusce sit amet accumsan dui.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-size-12">
+
           </div>
         </div>
       </div>
@@ -169,21 +227,62 @@
         </svg>
         <div class="section">
           <div class="container">
-            <div class="content has-text-centered">
-              <h3 class="subtitle">Socials</h3>
-              <ul class="socials">
-                <li><a href="#"><i class="fab fa-discord"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitch"></i></a></li>
-              </ul>
-              <p>Copyright © University of Warwick Computing Society. Website built by <a href="#">David Richardson</a>.</p>
+            <div class="columns">
+              <div class="column is-4">
+                <h3 class="socials-title is-size-4 title">Socials</h4>
+                <ul class="socials">
+                  <li><a href="https://wasd.warwick.gg/discord"><i class="fab fa-discord"></i></a></li>
+                  <li><a href="https://twitter.com/warwickspeedruns"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="https://twitch.tv/warwickesports"><i class="fab fa-twitch"></i></a></li>
+                  <li><a href="https://www.youtube.com/channel/UCrQLf-vqI47qzSWOeODR_6g"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+              </div>
+              <div class="column">
+                <div class="content has-text-centered">
+                  <p>Copyright © University of Warwick Computing Society. Website built by <a href="https://github.com/davidjrichardson">David Richardson</a>.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
     </footer>
 
     <script type="text/javascript">
+      /** Animation for the stopwatch **/
       function easing(t) { return t<.5 ? 2*t*t : -1+(4-2*t)*t };
+
+      /** Countdown timer **/
+      // Set the date we're counting down to
+      var countDownDate = new Date("Feb 1, 2020 12:00:00").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the countdown
+        document.getElementById("days").innerHTML = days + (days === 1 ? " day" : " days");
+        document.getElementById("hours").innerHTML = hours + (hours === 1 ? " hour" : " hours");
+        document.getElementById("mins").innerHTML = minutes + (minutes === 1 ? " minute" : " minutes");
+        // document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+        // + minutes + "m " + seconds + "s ";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("countdown").innerHTML = "WASD2020 is now <strong><a href=\"https://twitch.tv/warwickesports\">live on Twitch</a></strong>!"
+        }
+      }, 1000);
 
       (function() {
         let clock = document.getElementById('stopwatch-hand').getBoundingClientRect().bottom;
