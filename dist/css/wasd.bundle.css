@@ -238,6 +238,7 @@
       fill: #EEF6FF; }
   .hero.wasd-gradient svg#hero-wave-mask {
     min-width: 1080px;
+    margin-bottom: -1px;
     z-index: 10; }
     .hero.wasd-gradient svg#hero-wave-mask path.wave-mask {
       fill: #FAFAFA; }
