@@ -273,7 +273,7 @@
     }
 
     & svg#hero-wave-mask {
-        min-width: 1080px;
+        min-width: auto;
         margin-bottom: -1px;
         z-index: 10;
 
@@ -493,7 +493,7 @@ svg .background-fill {
     }
 
     & svg {
-        min-width: 1080px;
+        min-width: auto;
     }
 
     & #where {
@@ -585,7 +585,7 @@ footer.footer {
     color: rgba(white, 0.95);
 
     & svg {
-        min-width: 1080px;
+        min-width: auto;
     }
 
     & .columns {

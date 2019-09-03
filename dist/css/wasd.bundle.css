@@ -237,7 +237,7 @@
     .hero.wasd-gradient svg#wasd-logo g.hero-text-fill {
       fill: #EEF6FF; }
   .hero.wasd-gradient svg#hero-wave-mask {
-    min-width: 1080px;
+    min-width: auto;
     margin-bottom: -1px;
     z-index: 10; }
     .hero.wasd-gradient svg#hero-wave-mask path.wave-mask {
@@ -374,7 +374,7 @@ svg .background-fill {
   .where-wrapper svg:last-child {
     margin-bottom: -7px; }
   .where-wrapper svg {
-    min-width: 1080px; }
+    min-width: auto; }
   .where-wrapper #where {
     min-height: 500px; }
     .where-wrapper #where hr.title-divider {
@@ -426,7 +426,7 @@ footer.footer {
   background-color: #8896ff;
   color: rgba(255, 255, 255, 0.95); }
   footer.footer svg {
-    min-width: 1080px; }
+    min-width: auto; }
   footer.footer .columns {
     align-items: flex-end; }
   footer.footer .socials-title {
