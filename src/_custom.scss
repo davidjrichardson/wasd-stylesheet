@@ -35,9 +35,8 @@
             & a {
                 text-decoration: underline;
         
-                transition: color 0.1s ease-in-out;
-        
-                &:hover {
+                &:hover,
+                &:focus {
                     color: white;
                 }
             }
@@ -546,10 +545,38 @@ svg .background-fill {
         margin-bottom: $block-spacing;
     }
 
+    & a {
+        color: darken($wasd-indigo, 10%);
+
+        &:hover,
+        &:focus {
+            color: $wasd-indigo;
+        }
+    }
+
     & figure img {
         border-radius: $radius;
 
-        box-shadow: 0 2px 4px rgba(darken($wasd-blue, 50%), 0.3);
+        box-shadow: 0 2px 4px rgba(black, 0.2);
+    }
+
+    & .button.is-wasd.is-wasd.is-wasd {
+        background-color: $wasd-indigo;
+        color: white;
+    
+        box-shadow: 0 2px 4px rgba(darken($wasd-indigo, 50%), 0.2);
+    
+        border-radius: 6px;
+        
+        &:hover,
+        &:focus {
+            top: -1px;
+            box-shadow: 0 3px 6px rgba(darken($wasd-indigo, 50%), 0.25);
+    
+            background-color: lighten($wasd-indigo, 4%);
+        }
+    
+        margin-bottom: 5px;
     }
 }
 
