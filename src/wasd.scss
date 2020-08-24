@@ -11,19 +11,37 @@ $wasd-indigo: #8896ff;
 $wasd-purple: rgb(146, 116, 255);
 $wasd-light-blue: #57EDFF;
 
-$wasd-grad-1: #72DEFF;
-$wasd-grad-2: #72C7FF;
-$wasd-grad-3: #6DE3FF;
-$wasd-grad-4: #A3F2FF;
-$wasd-grad-5: #5DAAFF;
-$wasd-grad-6: #6DBFFF;
-$wasd-grad-7: #71DEFF;
-$wasd-grad-8: #72E5FF;
-$wasd-grad-9: #72D9FF;
-$wasd-grad-10: #72F6FF;
+$wasd-violet: #8338EC;
+$wasd-magenta: #FF006E;
+$wasd-orange: #FB5607;
 
-$hero-text: #EEF6FF;
-$hero-divider: #ADDEFF;
+$hero-gradient-end: $wasd-magenta;
+$hero-gradient-start: $wasd-violet;
+$hero-gradient-tint: #FFBD9E;
+$hero-text: #f2e1f3;
+$hero-divider: #ffadf8;
+$hero-button: #F6B6FF;
+
+$wasd-grad-1: #F477FF;
+$wasd-grad-2: #CF95FF;
+$wasd-grad-3: #D86DFF;
+$wasd-grad-4: #FF65E0;
+$wasd-grad-5: #885DFF;
+$wasd-grad-6: #9B6DFF;
+$wasd-grad-7: #D971FF;
+$wasd-grad-8: #E68BF2;
+$wasd-grad-9: #F78AA9;
+$wasd-grad-10: #FFB6D1;
+
+$where-grad-start: #ff6b00;
+$where-grad-end: #3300A4;
+$where-text: $hero-text;
+
+$where-grad-1: #FF90B4;
+$where-grad-2: #6DC3EC;
+$where-grad-3: #D86DFF;
+$where-grad-4: #8765FF;
+$where-grad-5: #ffb390;
 
 // Screen width overrides
 $mobile-width: 400px;
@@ -35,7 +53,8 @@ $body-background-color: $wasd-background;
 $navbar-background-colour: transparent;
 $navbar-item-hover-background-color: transparent;
 
-$primary: $wasd-blue;
+$primary: $wasd-violet;
+$secondary: $wasd-magenta;
 
 @import "../node_modules/bulma/sass/utilities/_all.sass";
 
