@@ -470,11 +470,11 @@ svg .background-fill {
 
 .whats-on-wrapper {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr;
   grid-gap: 1.5rem; }
   @media screen and (min-width: 769px) {
     .whats-on-wrapper {
-      grid-template-columns: auto auto; } }
+      grid-template-columns: repeat(2, 1fr); } }
   .whats-on-wrapper .content a {
     color: #3b00be; }
     .whats-on-wrapper .content a:hover, .whats-on-wrapper .content a:focus {

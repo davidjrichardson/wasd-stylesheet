@@ -734,11 +734,11 @@ svg .background-fill {
 
 .whats-on-wrapper {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr;
   grid-gap: $block-spacing;
 
   @media screen and (min-width: $tablet) {
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   & .content {
