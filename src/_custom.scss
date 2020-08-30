@@ -479,16 +479,11 @@ svg .background-fill {
   }
 
   & a {
-    max-height: 60px;
+    max-height: 80px;
+    min-width: 30%;
 
-    &.pad-635 {
-      padding-left: 63.5px;
-      padding-right: 63.5px;
-    }
-
-    &.mw-187 {
-      min-width: 187px;
-    }
+    display: flex;
+    justify-content: center;
 
     & img {
       max-height: inherit;
@@ -506,7 +501,7 @@ svg .background-fill {
     }
 
     &.large {
-      max-height: 90px;
+      max-height: 100px;
     }
 
     &:hover img,
@@ -520,12 +515,14 @@ svg .background-fill {
     flex-direction: column;
     align-items: center;
     justify-content: start;
+    gap: $block-spacing;
 
     @media screen and (min-width: 769px) {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-evenly;
       align-items: start;
+      gap: 0;
     }
   }
 }
